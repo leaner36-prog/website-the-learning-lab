@@ -8,7 +8,7 @@ import { SITE } from '../../config/site';
 import { cn } from '../../lib/cn';
 
 const linkBase =
-  'relative inline-flex items-center gap-1 px-1 py-2 text-[15px] font-medium transition-colors hover:text-brand-700';
+  'relative inline-flex items-center gap-1 whitespace-nowrap px-1 py-2 text-[15px] font-medium transition-colors hover:text-brand-700';
 const activeBar =
   "after:absolute after:inset-x-1 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-brand-700 after:content-['']";
 
@@ -52,18 +52,18 @@ export function Header() {
   const programActive = pathname.startsWith('/chuong-trinh');
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/85">
+    <header className="sticky top-0 z-50 border-b border-line bg-white">
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-2 focus:z-50 focus:rounded-lg focus:bg-brand-700 focus:px-4 focus:py-2 focus:text-white"
       >
         Bỏ qua điều hướng
       </a>
-      <div className="container-page flex h-16 items-center justify-between gap-4 lg:h-20">
+      <div className="container-page flex h-16 items-center justify-between gap-4 xl:h-20">
         <Logo />
 
-        <nav aria-label="Điều hướng chính" className="hidden lg:block">
-          <ul className="flex items-center gap-5 xl:gap-7">
+        <nav aria-label="Điều hướng chính" className="hidden xl:block">
+          <ul className="flex items-center gap-6 2xl:gap-8">
             <li>
               <NavLink to="/" end className={({ isActive }) => cn(linkBase, isActive ? 'text-brand-700 ' + activeBar : 'text-ink')}>
                 Trang chủ
@@ -122,7 +122,7 @@ export function Header() {
           </ul>
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden items-center gap-2 xl:flex">
           <ButtonLink to="/kiem-tra-dau-vao" variant="secondary" size="sm">
             Kiểm tra đầu vào
           </ButtonLink>
@@ -133,7 +133,7 @@ export function Header() {
 
         <button
           type="button"
-          className="-mr-2 rounded-lg p-2 text-ink hover:bg-alt lg:hidden"
+          className="-mr-2 rounded-lg p-2 text-ink hover:bg-alt xl:hidden"
           aria-label={mobileOpen ? 'Đóng menu' : 'Mở menu'}
           aria-expanded={mobileOpen}
           aria-controls="mobile-menu"
@@ -146,7 +146,7 @@ export function Header() {
       {mobileOpen && (
         <div
           id="mobile-menu"
-          className="fixed inset-x-0 bottom-0 top-16 z-40 flex flex-col overflow-y-auto bg-white lg:hidden"
+          className="fixed inset-x-0 bottom-0 top-16 z-40 flex flex-col overflow-y-auto bg-white xl:hidden"
         >
           <nav aria-label="Điều hướng di động" className="container-page flex-1 py-4">
             <ul className="divide-y divide-line">

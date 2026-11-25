@@ -18,7 +18,7 @@ export function Logo({ inverted, className }: { inverted?: boolean; className?: 
       >
         <FlaskRound className="size-5" strokeWidth={2.25} />
       </span>
-      <span className={cn('text-lg font-extrabold tracking-tight', inverted ? 'text-white' : 'text-ink')}>
+      <span className={cn('whitespace-nowrap text-lg font-extrabold tracking-tight', inverted ? 'text-white' : 'text-ink')}>
         The Learning <span className={inverted ? 'text-brand-200' : 'text-brand-700'}>Lab</span>
       </span>
     </Link>
