@@ -68,4 +68,4 @@ create policy "admin read self" on public.admins for select to authenticated usi
 commit;
 
 -- Thêm tài khoản quản trị (chạy sau khi đã tạo user trong Supabase Auth):
--- insert into public.admins (user_id) select id from auth.users where email = 'admin@example.com';
+-- insert into public.admins (user_id) select id from auth.users where email = 'luongngocthai2811@gmail.com';

@@ -13,19 +13,18 @@ export interface FaqItem {
   a: string;
 }
 
-// TODO: trung tâm cập nhật chính sách học phí thực tế
 export const PRICING_FAQ: FaqItem[] = [
   {
     q: 'Đóng học phí như thế nào?',
-    a: 'TODO: Học phí được đóng theo gói buổi hoặc theo tháng, bằng chuyển khoản hoặc tiền mặt tại trung tâm.',
+    a: 'Học phí được đóng theo gói buổi hoặc theo tháng, bằng chuyển khoản hoặc tiền mặt tại trung tâm.',
   },
   {
     q: 'Nghỉ học có được học bù không?',
-    a: 'TODO: Nếu báo nghỉ trước, con sẽ được sắp xếp buổi học bù phù hợp.',
+    a: 'Nếu báo nghỉ trước, con sẽ được sắp xếp buổi học bù phù hợp với lịch của con.',
   },
   {
     q: 'Học nhiều môn có ưu đãi không?',
-    a: 'TODO: Trung tâm có ưu đãi khi đăng ký từ 2 môn trở lên hoặc anh/chị em ruột cùng học.',
+    a: 'Trung tâm có ưu đãi khi đăng ký từ 2 môn trở lên hoặc anh/chị em ruột cùng học.',
   },
 ];
 
@@ -93,7 +92,6 @@ export const PLACEMENT_CONTENT = [
 export const PLACEMENT_STEPS = [
   { title: 'Đặt lịch', description: 'Phụ huynh điền form bên dưới, chọn ngày và khung giờ mong muốn.' },
   { title: 'Xác nhận lịch', description: 'Trung tâm gọi điện hoặc nhắn Zalo xác nhận trong vòng 24 giờ.' },
-  // TODO: xác nhận thời lượng bài kiểm tra
   { title: 'Con làm bài', description: 'Con làm bài trực tiếp với giáo viên khoảng 45–60 phút.' },
   { title: 'Nhận kết quả & lộ trình', description: 'Giáo viên trao đổi kết quả và tư vấn lộ trình ngay trong buổi.' },
 ];

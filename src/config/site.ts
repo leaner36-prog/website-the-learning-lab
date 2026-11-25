@@ -5,16 +5,16 @@ export const SITE = {
   zaloDisplay: '0911 558 819',
   zaloUrl: 'https://zalo.me/0911558819',
   phoneUrl: 'tel:0911558819',
-  address: 'TODO: địa chỉ trung tâm',
-  email: 'TODO: email',
-  openingHours: 'TODO: giờ làm việc',
+  address: 'R105 Vinhomes Ocean Park, Gia Lâm, Hà Nội',
+  email: 'thelearninglab.3in1@gmail.com',
+  openingHours: 'Thứ 2 – Thứ 6: 14:00 – 21:00 · Thứ 7 – CN: 08:30 – 20:30',
   pricing: {
     tieuHoc: { label: 'Tiểu học', grades: 'Lớp 1 – 5', price: 250000, unit: 'buổi' },
     thcs: { label: 'THCS', grades: 'Lớp 6 – 9', price: 350000, unit: 'buổi' },
   },
-  sessionMinutes: 90, // TODO: xác nhận thời lượng 1 buổi
-  freeTrial: true, // TODO: xác nhận học thử miễn phí
-  freePlacementTest: true, // TODO: xác nhận kiểm tra đầu vào miễn phí
+  sessionMinutes: 90,
+  freeTrial: true,
+  freePlacementTest: true,
 };
 
 export const formatVND = (n: number) => n.toLocaleString('vi-VN') + 'đ';

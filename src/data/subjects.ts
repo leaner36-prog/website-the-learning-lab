@@ -196,7 +196,7 @@ export const SUBJECTS: Subject[] = [
       },
       {
         q: 'Lớp học có giáo viên nước ngoài không?',
-        a: 'TODO: trung tâm cập nhật thông tin đội ngũ giáo viên.',
+        a: 'Đội ngũ giáo viên gồm giáo viên Việt Nam giàu kinh nghiệm luyện thi Cambridge và giáo viên nước ngoài hỗ trợ luyện nghe – nói theo từng cấp độ.',
       },
       {
         q: 'Con nhút nhát, ngại nói thì sao?',
